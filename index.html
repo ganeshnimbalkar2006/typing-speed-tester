@@ -1,26 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Typing Speed Tester</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-    <div class="container">
-        <h1>Typing Speed Tester</h1>
-        <div class="text-to-type" id="textToType">
-            Click "Start Test" to begin typing.
+<body>
+
+<nav>
+    <h2> TypeMaster</h2>
+    <button id="themeButton">🌙 Dark Mode</button>
+</nav>
+
+<div class="container">
+
+    <h1>Typing Speed Tester</h1>
+
+    <div class="stats">
+
+        <div class="card">
+            <h3>WPM</h3>
+            <span id="wpm">0</span>
         </div>
-        <textarea id="inputField" placeholder="Start typing here..." disabled></textarea>
-        <button class="button" id="startButton">Start Test</button>
-        <div class="results" id="results"></div>
+
+        <div class="card">
+            <h3>Accuracy</h3>
+            <span id="accuracy">0%</span>
+        </div>
+
+        <div class="card">
+            <h3>Time</h3>
+            <span id="timer">30s</span>
+        </div>
+
     </div>
 
-   <script src="script.js"></script>
-</body>
+    <div id="text-display">
+        Click Start Test to begin...
+    </div>
 
+    <textarea
+        id="input"
+        placeholder="Start typing..."
+    ></textarea>
+
+    <button id="startBtn">
+        Start Test
+    </button>
+
+</div>
+
+</body>
+</body>
 </html>
